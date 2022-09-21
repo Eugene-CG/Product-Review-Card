@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  background-color: #f3eae3;
+}
+
+.product {
+  width: 40em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  border-radius: 1em;
+  background-color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.product > div {
+  width: 50%;
+}
+
+.product__img img {
+  height: 100%;
+  opacity: 0.9;
+}
+
+.product__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1em;
+  padding: 1.6em;
+  padding-right: 2.5em;
+}
+
+.product__title {
+  opacity: 0.5;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.product__name {
+  width: 60%;
+  white-space: wrap;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.product__description {
+  opacity: 0.5;
+}
+
+.product__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.product__prices__current-price {
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #4e7f6e;
+}
+
+.product__prices__old-price {
+  font-size: 1.3em;
+}
+
+.product__add-btn {
+  width: 80%;
+  height: 50px;
+  border: none;
+  margin: 0 auto;
+  border-radius: 0.25em;
+  font-size: 1.3em;
+  font-weight: 100;
+  color: #fff;
+  background-color: #428168;
+}
+
+@media (max-width: 645px) {
+  .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20em;
+  }
+  .product > div {
+    height: 20em;
+    width: 20em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
