@@ -64,14 +64,14 @@ img {
   &__prices {
     display: flex;
     gap: 1em;
-    &__current-price {
-      font-size: 2.5em;
-      font-weight: 900;
-      color: #4e7f6e;
-    }
-    &__old-price {
-      font-size: 1.3em;
-    }
+  }
+  &__current-price {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #4e7f6e;
+  }
+  &__old-price {
+    font-size: 1.3em;
   }
   &__add-btn {
     width: 80%;
@@ -93,11 +93,11 @@ img {
     }
   }
 }
-.product__prices {
-}
-.product__prices__current-price {
-}
-.product__prices__old-price {
-}
-.product__add-btn {
+.product__add-btn_hover {
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: #428168;
+    background-color: #000;
+    transform: scale(0.9);
+  }
 }
